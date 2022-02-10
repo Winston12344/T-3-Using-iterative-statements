@@ -25,3 +25,21 @@ class CAD_US
         
         //heading labels for the table
         Console.WriteLine
+        Console.WriteLine("------------");
+
+            //do while loop
+            do
+            {
+                // calculate USD into CAD
+                // Formula for the calculation, multiply increament value of CAD by 0.786205 to obtain USD amount
+                USD = CAD * 0.786205;
+                //print
+                Console.WriteLine(CAD + "     " + USD);
+
+                // increament CAD by inc_value
+                CAD += inc_value;
+            }
+            while (CAD <= 200);
+        }
+    }
+} 
